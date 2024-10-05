@@ -9,12 +9,13 @@
   scrollbar-width: none;
   min-height: min-content;
   text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+
 }
 
 body {
   color: white;
   font-family: "DM Sans";
-  overflow-x: hidden;
   font-weight: 500;
   min-height: 100svh;
   background: url("images/bg.png") no-repeat -50vh 10% / 100%, hsl(202, 24%, 8%);
@@ -64,12 +65,10 @@ a {
   scrollbar-width: none;
 
   & a {
-    /* border: 1px solid; */
     height: 1.33em;
     line-height: 1.33em;
     aspect-ratio: 1/1;
     border-radius: .25em;
-    /* filter: grayscale(1); */
   }
 
   & i {
