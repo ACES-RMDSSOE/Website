@@ -76,7 +76,6 @@ a {
   & i {
     display: inline-block;
     width: 100%;
-
   }
 }
 
@@ -102,18 +101,18 @@ a {
       display: inline-block;
       font-size: 0.8em;
       height: max-content;
+      width: 2em;
     }
   }
 
-  /*
-  & a::after {
-    font-family: FontAwesome;
+
+  /* & a::after {
+    font-sfamily: FontAwesome;
     content: '\f08e';
     font-size: .67em;
     margin-left: auto;
     padding-inline-start: .5em;
-  }
-  */
+  } */
   & span {
     position: relative;
   }

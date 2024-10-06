@@ -43,12 +43,12 @@
         <article class="lg:w-3/4 md:w-[80%] w-[60%] text-[#cecece] text-[.5em]">
           <h2 class="xl:!text-base p-2 text-center font-extrabold"> We're the official Student Association of the <br />
             Department of Computer Engineering, RMDSSOE, Pune </h2>
-          <h3 class="xl:!text-base p-2 text-center hidden font-light md:block text-[#aaa]"> Here, you'll find quick
-            access to essential resources, events, and updates. <br /> Stay connected with our community, explore
-            academic programs, campus life, and more at your fingertips. </h3>
-          <h3 class="p-2 text-center md:hidden font-light text-[#aaa]"> Here, you'll find quick access to essential
-            resources, events, and updates. Stay connected with our community, explore academic programs, campus life,
-            and more at your fingertips. </h3>
+          <h3 class="xl:!text-base p-2 text-center hidden md:block text-[#aaa]"> Here, you'll find quick access to
+            essential resources, events, and updates. <br /> Stay connected with our community, explore academic
+            programs, campus life, and more at your fingertips. </h3>
+          <h3 class="p-2 text-center md:hidden text-[#aaa]"> Here, you'll find quick access to essential resources,
+            events, and updates. Stay connected with our community, explore academic programs, campus life, and more at
+            your fingertips. </h3>
         </article>
         <section id="header-icons" class="text-[1.25em]">
           <a href=" https://www.instagram.com/aces_rmdssoe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
@@ -60,6 +60,9 @@
           <a href="https://www.linkedin.com/company/aces-rmdssoe/" target="_blank"
             class="hover:text-[#0a66c2] text-center bg-[#002b3d88]" title="Check out our LinkedIn!"><i
               class="fa-brands fa-linkedin text-[#61caff]"></i></a>
+          <a href="https://chat.whatsapp.com/JMnbIm2k3cXAuj9zt38Xbx" target="_blank"
+            class="hover:text-[#0a66c2] text-center bg-[#00321c]" title="Join our WhatsApp community!"><i
+              class="fa-brands fa-whatsapp text-[#43f78e]"></i></a>
         </section>
       </header>
       <section id="links" class="flex items-center justify-center flex-col mt-5 md:w-[33%] w-[100%]">
@@ -70,15 +73,15 @@
           <span>ACES Home</span>
           <i class="fa-solid fa-ellipsis-vertical"></i>
         </a>
+        <a href="https://aces-rmdssoe.notion.site/Meet-the-team-529e459514c34dec82bd91d89334aa81" target="_blank"
+          class="btn backdrop-blur bg-[#2226] w-[100%] lg:py-4 xl:text-[.55em] text-[.67em] lg:max-w-[600px] md:max-w-[400px] border border-[#5555] rounded lg:px-6 md:py-2 md:px-3 p-3 max-w-[57.5%] shadow-md mb-1 lg:mb-3">
+          <i class="fa-solid fa-user-group text-indigo-300"></i>
+          <span>Meet The Team!</span>
+        </a>
         <a href="https://certificate.aces-rmdssoe.tech" target="_blank"
           class="btn backdrop-blur bg-[#2226] w-[100%] lg:py-4 xl:text-[.55em] text-[.67em] lg:max-w-[600px] md:max-w-[400px] border border-[#5555] rounded lg:px-6 md:py-2 md:px-3 p-3 max-w-[57.5%] shadow-md mb-1 lg:mb-3">
           <i class="fa-solid fa-file-arrow-down text-violet-500"></i>
           <span>Download Your Certificates</span>
-        </a>
-        <a href="https://chat.whatsapp.com/JMnbIm2k3cXAuj9zt38Xbx" target="_blank"
-          class="btn backdrop-blur bg-[#2226] w-[100%] lg:py-4 xl:text-[.55em] text-[.67em] lg:max-w-[600px] md:max-w-[400px] border border-[#5555] rounded lg:px-6 md:py-2 md:px-3 p-3 max-w-[57.5%] shadow-md mb-1 lg:mb-3">
-          <i class="fa-brands fa-whatsapp text-green-300"></i>
-          <span>Join our WhatsApp Community</span>
         </a>
         <a href="https://verify.aces-rmdssoe.tech" target="_blank"
           class="btn backdrop-blur bg-[#2226] w-[100%] lg:py-4 xl:text-[.55em] text-[.67em] lg:max-w-[600px] md:max-w-[400px] border border-[#5555] rounded lg:px-6 md:py-2 md:px-3 p-3 max-w-[57.5%] shadow-md mb-1 lg:mb-3">
@@ -119,10 +122,8 @@
         welcomeText.appendChild(span);
         gsap.fromTo(span, {
           opacity: 0,
-          y: 50,
         }, {
           opacity: 1,
-          y: 0,
           duration: 0.5,
           delay: index * 0.1,
           ease: "bounce.out"
