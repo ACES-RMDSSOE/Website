@@ -106,7 +106,7 @@ a {
     color: white;
   }
 
-  & a>i:nth-of-type(2) {
+  & a > i:nth-of-type(2) {
     position: absolute;
     right: 1em;
     padding: 0.3em 0.667em;
