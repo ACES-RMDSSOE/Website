@@ -54,6 +54,7 @@
               title="Hey ACES!"
               width="52"
               height="52"
+              loading="lazy"
           /></a>
         </div>
         <h1
@@ -189,6 +190,7 @@
       const textArray = welcomeText.innerText.split("");
       welcomeText.innerHTML = "";
       // Splits the welcome text into individual letters and stores them in an array. Clears the current text content
+      
       textArray.forEach((letter, index) => {
         const span = document.createElement("span");
         span.innerText = letter;
