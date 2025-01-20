@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta name="description" content="ACES RMDSSOE LinkTree" />
+    <meta
+      name="description"
+      content="Association of Computer Engineering Students, RMD Sinhgad School of Engineering, Pune, Maharashtra, India - 411058"
+    />
     <meta name="author" content="ACES RMDSSOE" />
-    <meta name="keywords" content="ACES, RMDSSOE, RMD, Computer, Certificate" />
+    <meta name="keywords" content="ACES, RMDSSOE, Computer, Engineering" />
     <meta name="robots" content="index, follow" />
-    <!-- // -->
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
     <title>ACES RMDSSOE | Home</title>
     <link rel="stylesheet" href="./styles.css" />
@@ -16,6 +18,7 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
       defer
     ></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -46,7 +49,7 @@
       <!-- Header with ACES logo, title, and a short description -->
       <header class="flex items-center justify-center z-5 flex-col">
         <div class="avatar h-[2.125em] grid place-items-center aspect-square">
-          <a href="https://aces-rmdssoe.tech" target="_blank"
+          <a href="/" target="_blank"
             ><img
               src="./images/logo.png"
               alt="ACES Logo"
@@ -84,11 +87,12 @@
         <!-- Social media icons (Instagram, GitHub, LinkedIn) -->
         <section id="header-icons">
           <a
-            href=" https://www.instagram.com/aces_rmdssoe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            href="https://theaces.social/Instagram"
             target="_blank"
             class="text-[1.25em] hover:text-[#c13584]"
             title="Check out our Instagram!"
             ><i class="fa-brands fa-instagram"></i
+
           ></a>
           <a
             href="https://github.com/ACES-RMDSSOE"
@@ -96,9 +100,10 @@
             class="text-[1.25em] hover:text-[#6e5494]"
             title="Check out our GitHub org!"
             ><i class="fa-brands fa-github"></i
+            rel="noopener"
           ></a>
           <a
-            href="https://www.linkedin.com/company/aces-rmdssoe/"
+            href="https://theaces.social/LinkedIn"
             target="_blank"
             class="text-[1.25em] hover:text-[#0a66c2]"
             title="Check out our LinkedIn!"
@@ -204,13 +209,13 @@
           {
             opacity: 1,
             y: 0,
+
             duration: 0.5,
             delay: index * 0.1,
             ease: "bounce.out",
           }
-        );
-      });
-
+        )
+      })
       // Step 3: Slide up the welcome screen after a delay
       setTimeout(() => {
         gsap.to(welcomeScreen, {
@@ -219,11 +224,11 @@
           ease: "power2.inOut",
           onComplete: () => {
             // Show the main content
-            welcomeScreen.style.display = "none";
-            mainContent.style.display = "flex";
+            welcomeScreen.style.display = "none"
+            mainContent.style.display = "flex"
 
             // Animate each main content element
-            const elements = mainContent.children;
+            const elements = mainContent.children
             gsap.fromTo(
               elements,
               { y: "100%", opacity: 0 },
@@ -234,10 +239,11 @@
                 stagger: 0.3,
                 ease: "power2.out", // Smooth easing for the main content
               }
-            );
+
+            )
           },
-        });
-      }, textArray.length * 100 + 1000); // Delay to allow for text animation
-    };
+        })
+      }, textArray.length * 100 + 1000) // Delay to allow for text animation
+    }
   </script>
 </html>

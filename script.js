@@ -2,15 +2,14 @@
 // Remove modal if "Escape" key is pressed
 document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
-    document.querySelector(".modal")?.remove();
+    document.querySelector(".modal")?.remove()
   }
-});
+})
 
 // Select share icons, Add click event listener to each icon
 document.querySelectorAll("i.fa-ellipsis-vertical").forEach((el) => {
   el.addEventListener("click", (e) => {
-    e.preventDefault();
-
+    e.preventDefault()
     const parentLink = el.closest("a");
     const link = parentLink.getAttribute("href"); // Find parent link, Get link
 
@@ -59,9 +58,9 @@ document.querySelectorAll("i.fa-ellipsis-vertical").forEach((el) => {
     // Remove modal if clicked on background
     modal.addEventListener("click", (e) => {
       if (e.target === modal) {
-        modal.remove();
+        modal.remove()
       }
-    });
+    })
 
     // Copy link functionality
     // Adds a click event listener to the "copy-link-btn" button.
@@ -69,17 +68,17 @@ document.querySelectorAll("i.fa-ellipsis-vertical").forEach((el) => {
       // Checks if the browser supports the Clipboard API
       if (navigator.clipboard) {
         navigator.clipboard.writeText(link).then(() => {
-          const button = document.getElementById("copy-link-btn");
-          button.innerHTML = "Copied!";
+          const button = document.getElementById("copy-link-btn")
+          button.innerHTML = "Copied!"
           setTimeout(() => {
             button.innerHTML = `Copy Link <span class="text-[.33em] md:text-[.5em] p-1 bg-gray-600/20 rounded overflow-x-scroll rounded whitespace-pre inline-block w-[10rem] md:w-fit">${encodeURIComponent(
               link
-            )}</span>`;
-          }, 2000);
-        });
+            )}</span>`
+          }, 2000)
+        })
       } else {
-        alert("Your browser does not support the Clipboard API");
+        alert("Your browser does not support the Clipboard API")
       }
-    };
-  });
-});
+    }
+  })
+})
