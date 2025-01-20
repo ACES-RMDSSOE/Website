@@ -6,7 +6,12 @@
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  scrollbar-width: none;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
   min-height: min-content;
   text-rendering: optimizeSpeed;
   overflow-x: hidden;
@@ -48,7 +53,7 @@ a {
   overflow: hidden;
 
   & i {
-    scrollbar-width: none;
+    overflow: hidden;
     overflow: clip;
   }
 }
@@ -59,7 +64,7 @@ a {
   align-items: center;
   justify-content: center;
   margin-top: 0.5em;
-  scrollbar-width: none;
+  overflow: hidden;
 
   & a {
     height: 1.33em;
