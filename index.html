@@ -30,7 +30,7 @@
       rel="stylesheet"
     />
   </head>
-
+  <!-- temporary welcome screen with a heading  -->
   <body class="2xl:text-[40px] xl:text-[30px] lg:text-[26px] text-white">
     <div
       id="welcome-screen"
@@ -43,14 +43,17 @@
     <main
       class="flex items-center justify-center h-[100%] z-5 flex-col mt-5 hidden"
     >
+      <!-- Header with ACES logo, title, and a short description -->
       <header class="flex items-center justify-center z-5 flex-col">
-        <div class="avatar h-[2.0em] grid place-items-center aspect-square">
+        <div class="avatar h-[2.125em] grid place-items-center aspect-square">
           <a href="https://aces-rmdssoe.tech" target="_blank"
             ><img
               src="./images/logo.png"
               alt="ACES Logo"
-              class="w-[2em] aspect-square rounded-[50%] drop-shadow"
+              class="w-[2.125em] aspect-square rounded-[50%] drop-shadow object-fit"
               title="Hey ACES!"
+              width="52"
+              height="52"
               loading="lazy"
           /></a>
         </div>
@@ -78,8 +81,8 @@
             programs, campus life, and more at your fingertips.
           </h3>
         </article>
+        <!-- Social media icons (Instagram, GitHub, LinkedIn) -->
         <section id="header-icons">
-          <!-- Icons and Links for Socials -->
           <a
             href=" https://www.instagram.com/aces_rmdssoe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
             target="_blank"
@@ -103,6 +106,7 @@
           ></a>
         </section>
       </header>
+      <!-- Links section with buttons for various resources and functionalities -->
       <section
         id="links"
         class="flex items-center justify-center flex-col mt-5 md:w-[33%] w-[100%]"
@@ -119,6 +123,7 @@
         >
           <i class="fa-solid fa-newspaper text-yellow-500"></i>
           <span>ACES Home</span>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
         </a>
         <a
           href="https://certificate.aces-rmdssoe.tech"
@@ -164,6 +169,7 @@
           class="tracking-[.25em] xl:text-[.5em] text-[.55em] text-[#aaa] my-2 md:mb-3"
         ></h4>
       </section>
+      <!-- Footer with a message from ACES -->
       <footer class="mt-5">
         <h3 class="xl:!text-base text-[.5em] p-2 text-center font-extrabold">
           Made with 💖 by ACES
@@ -171,17 +177,20 @@
       </footer>
     </main>
   </body>
-  <!-- <script src="./script.js"></script> -->
+  <script src="./script.js"></script>
   <script>
+    // Defines a function that runs when the page is loaded
     window.onload = function () {
+      //Gets references to the welcome screen and welcome text elements
       const welcomeScreen = document.getElementById("welcome-screen");
       const welcomeText = document.getElementById("welcome-text");
-      const mainContent = document.querySelector("main");
-
+      const mainContent = document.querySelector("main"); // reference to the main content section
+      // welcome text visible by setting its opacity to 1
       welcomeText.style.opacity = 1;
       const textArray = welcomeText.innerText.split("");
       welcomeText.innerHTML = "";
-
+      // Splits the welcome text into individual letters and stores them in an array. Clears the current text content
+      
       textArray.forEach((letter, index) => {
         const span = document.createElement("span");
         span.innerText = letter;

@@ -16,7 +16,7 @@ body {
   font-family: "DM Sans";
   font-weight: 500;
   min-height: 100svh;
-  background: url("https://i.ibb.co/MDgs25h/bg.png") no-repeat -50vh 10% / 100%, hsl(202, 24%, 8%);
+  background: url("images/bg.png") no-repeat -50vh 10% / 100%, hsl(202, 24%, 8%);
 }
 
 @media screen and (max-width: 768px) {
@@ -106,7 +106,7 @@ a {
     color: white;
   }
 
-  & a>i:nth-of-type(2) {
+  & a > i:nth-of-type(2) {
     position: absolute;
     right: 1em;
     padding: 0.3em 0.667em;
@@ -140,7 +140,7 @@ main #links a.large-btn {
  *  Very Messy
 */
 
-/* .modal {
+.modal {
   backdrop-filter: blur(0.25em);
 
   & ul {
@@ -158,22 +158,23 @@ main #links a.large-btn {
       display: flex;
       gap: 0.5em;
       align-items: center;
-      justify-content: flex-start;
       border-radius: inherit;
       background-color: #4443;
       cursor: pointer;
       padding: 0.25em 0.5em;
       border: 2px solid rgba(80, 80, 80, 0.6);
+      width: 100%;
 
       & a,
       button {
         font-size: 0.5em;
+        width: 100%;
       }
 
       & i {
         padding: 0.125em;
-        width: 1.25em;
         height: 1.25em;
+        aspect-ratio: 1/1;
         display: grid;
         border-radius: 0.5rem;
         color: attr(data-color);
@@ -181,15 +182,16 @@ main #links a.large-btn {
       }
     }
 
-    & li::after {
+    & li:not(:last-of-type):after {
       font-family: FontAwesome;
       content: "\f08e";
       font-size: 0.33em;
       margin-left: auto;
       padding-inline-start: 0.5em;
+      flex-shrink: 0;
     }
   }
-} */
+}
 
 @media screen and (max-width: 768px) {
   .modal {
