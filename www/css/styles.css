@@ -22,7 +22,8 @@ body {
   font-family: "DM Sans";
   font-weight: 500;
   min-height: 100svh;
-  background: url("images/bg.png") no-repeat -50vh 10% / 100%, hsl(202, 24%, 8%);
+  background: url("../images/bg.png") no-repeat -50vh 10% / 100%,
+    hsl(202, 24%, 8%);
 }
 
 @media screen and (max-width: 768px) {
@@ -141,7 +142,7 @@ main #links a.large-btn {
   align-items: center;
   display: flex;
   overflow: visible;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
   background-repeat: no-repeat;
 
   & i {
@@ -223,15 +224,16 @@ main #links a.large-btn {
 
 .btn,
 .large-btn {
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   background-color: #2226;
   width: 100%;
-  font-size: .67em;
+  font-size: 0.67em;
   border: 1px solid #5555;
   border-radius: 0.25rem;
   padding: 0.75rem;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -262,6 +264,6 @@ main #links a.large-btn {
 @media screen and (min-width: 1280px) {
   .btn,
   .large-btn {
-    font-size: .55em;
+    font-size: 0.55em;
   }
 }

@@ -1,0 +1,12 @@
+dispatch:
+  - url: "aces-rmdssoe.tech/*"
+    service: default
+
+  - url: "www.aces-rmdssoe.tech/*"
+    service: default
+
+  - url: "certificate.aces-rmdssoe.tech/*"
+    service: certificate
+
+  - url: "verify.aces-rmdssoe.tech/*"
+    service: verifier
