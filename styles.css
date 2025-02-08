@@ -101,7 +101,7 @@ a {
       padding-inline-end: 0.5em;
       padding: 0.25em 0.5em 0.25em 0.05em;
       display: inline-block;
-      font-size: 0.8em;
+      font-size: 0.8em !important;
       height: max-content;
       width: 2em;
     }
@@ -137,10 +137,12 @@ a {
 }
 
 main #links a.large-btn {
-  height: 15em;
+  max-height: 15em;
   align-items: center;
   display: flex;
   overflow: visible;
+  border-radius: .75rem;
+  background-repeat: no-repeat;
 
   & i {
     align-self: flex-end;
@@ -216,5 +218,50 @@ main #links a.large-btn {
       max-width: 60%;
       width: 100%;
     }
+  }
+}
+
+.btn,
+.large-btn {
+  backdrop-filter: blur(8px);
+  background-color: #2226;
+  width: 100%;
+  font-size: .67em;
+  border: 1px solid #5555;
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  margin-bottom: .25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .btn,
+  .large-btn {
+    max-width: 57.5%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btn,
+  .large-btn {
+    max-width: 400px;
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .btn,
+  .large-btn {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    max-width: 600px;
+    margin-bottom: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .btn,
+  .large-btn {
+    font-size: .55em;
   }
 }
