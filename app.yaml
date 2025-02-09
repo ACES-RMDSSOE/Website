@@ -1,0 +1,24 @@
+runtime: python39
+
+service: default
+
+handlers:
+  - url: /
+    static_files: www/index.html
+    upload: www/index.html
+
+  - url: /404
+    static_files: www/404.html
+    upload: www/404.html
+
+  - url: /(.*\.css)
+    static_files: www/\1
+    upload: www/(.*\.css)
+
+  - url: /(.*\.js)
+    static_files: www/\1
+    upload: www/(.*\.js)
+
+  - url: /(.*)
+    static_files: www/\1
+    upload: www/(.*)
