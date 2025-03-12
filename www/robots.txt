@@ -1,0 +1,9 @@
+User-agent: Googlebot
+Allow: /
+Disallow: /cdn-cgi
+
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /junk/
+Disallow: /cdn-cgi/
