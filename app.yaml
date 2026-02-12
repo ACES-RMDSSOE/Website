@@ -20,5 +20,7 @@ handlers:
     upload: www/(.*\.js)
 
   - url: /(.*)
+    # Require at least one character so this handler does NOT match the root path `/`.
+    url: /(.+)
     static_files: www/\1
-    upload: www/(.*)
+    upload: www/(.+)
