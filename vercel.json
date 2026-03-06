@@ -1,7 +1,7 @@
 {
   "redirects": [
     {
-      "source": "/drive",
+      "source": "/study",
       "destination": "https://drive.google.com/drive/folders/1KlX7qGomf6yefhLm1Fcgbh92yvfXWK9P",
       "permanent": false
     }
