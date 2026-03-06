@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/drive",
+      "destination": "https://drive.google.com/drive/folders/1KlX7qGomf6yefhLm1Fcgbh92yvfXWK9P",
+      "permanent": false
+    }
+  ]
+}
